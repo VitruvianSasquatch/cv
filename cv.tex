@@ -1,0 +1,273 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment:
+\usepackage[a4paper,bindingoffset=0.5cm,left=2cm,right=2cm,top=2cm,bottom=2cm,footskip=.6cm]{geometry}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{2pt}{2pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Sam \textsc{Spekreijse}}\smallskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{email:} & \href{mailto:speksam@gmail.com}{speksam@gmail.com} \\
+\textsc{Address:} & 31A Kirkwood Ave, Upper Riccarton, Christchurch \\
+\textsc{Phone:} & +64 27 726 7735 \\
+\textsc{Course of Study:} & PhD in \textsc{Electrical \& Electronic Engineering} \\
+& Bachelor of Engineering in \textsc{Electrical \& Electronic Engineering} \\
+& Bachelor of Science in \textsc{Physics \& Computer Science} 
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Jul 2017}-\emph{Present} & Teaching Assistant at \textsc{The University of Canterbury}, Christchurch \\
+& \emph{Academic Tutelage and Administration} \\
+& \footnotesize{Teaching assistant for a C programming course and two embedded systems/signal processing courses (200, 300 and 400 level respectively). This involves explaining concepts to students in lab sessions as well as marking and test invigilation. } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Nov 2018-Feb 2019} & Research Scholar at \textsc{The University of Canterbury}, Christchurch \\
+& \emph{Embedded C Development, Embedded Hardware Development}\\
+& \footnotesize{Developed a controller/converter device that parses a custom serial protocol and controls an optical telescope's tip-tilt mirror. }\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan-Feb 2018} & Engineering Contractor at \textsc{Syft Technologies Ltd}, Christchurch \\
+& \emph{Embedded C Development}\\
+& \footnotesize{Developed drivers for I\textsuperscript{2}C sensor daughter boards and closed-loop controlled heating units. Also created a data-passing API for use with CANBUS across all production boards. }\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Nov 2016-Feb 2017} & Engineering Intern at \textsc{Aucom Electronics Ltd}, Christchurch \\
+& \emph{Embedded C Development}\\
+& \footnotesize{Integrated new SPI current-sensing instrumentation, and wrote the signal analysis code for the new input. Also worked on interpreting magnetometer readings for preventative maintenance. } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Nov 2015-Feb 2016} & Engineering Intern at \textsc{Syft Technologies Ltd}, Christchurch \\
+& \emph{Java Development, Embedded C Development}\\
+& \footnotesize{In Java, developed an experimental framework of data analysis algorithms for use in end-user software, now released. Also designed a fully automated component test jig that ensured the unit under test met specifications. } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+%\textsc{Jul-Sep 2015} & Technical Assistant at \textsc{Pringle Beleski \& Associates Ltd}, Christchurch \\
+%& \emph{Embedded C Development, Linux Development}\\
+%& \footnotesize{Worked on prototype SF6 instrumentation, processing input and writing a summary via USB to PDF. } \\
+%\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Nov 2014-Feb 2015} & Administration Assistant at \textsc{Transpower New Zealand Ltd}, Wellington \\
+& \emph{General Administration, Dispatching}\\
+& \footnotesize{Helped maintain the national grid asset records, and allocated contractors to job requests. } \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+%\textsc{Dec 2013} & Project sub-leader for the NZ Scout Jamboree, coordinating events and activities for the attendees (volunteer)
+
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r|l}	
+
+2019-\emph{Present} & \normalsize \textbf{The University of Canterbury}, in progress \\
+& PhD in \textsc{Electrical \& Electronic Engineering} \\
+& \quad \small\emph{Ongoing} \\
+\multicolumn{2}{c}{} \\
+
+2014-\emph{Present} & \normalsize \textbf{The University of Canterbury}, in progress, \normalsize \textsc{Gpa}: 8.44/9.00 \\
+& Bachelor of Engineering (Hons) in \textsc{Electrical \& Electronic Engineering} \\
+& \quad \small\emph{Honours Project:} \textbf{A low-cost, LIDAR-based, SLAM-implementing autonomous rover} \\
+& \quad \small\emph{Graduating requirements satisfied}, EPCA Top Achiever Award (\textbf{final year 1\textsuperscript{st} in class}) \\
+& Bachelor of Science in \textsc{Physics \& Computer Science} \\
+& \quad \small\emph{Courses ongoing} \\
+\multicolumn{2}{c}{} \\
+
+2009-2013 & \normalsize \textbf{Wellington College} \\
+& \small\textbf{Headmaster's Award for exemplary service} \\
+\multicolumn{2}{c}{} \\
+
+
+\end{tabular}
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Proficiencies}
+
+\begin{tabular}{r|l}
+	
+\textsc{Programming Languages} & Well-versed in \textbf{C}, both for Linux and embedded contexts \\ 
+& Moderate ability with \textbf{Python} \\
+& Some experience With \textbf{C++}, \textbf{Java}, and \textbf{MATLAB} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Parallel Programming} & Moderate experience writing threaded C programs \\
+& \quad \small{\textbf{pthreads}, \textbf{OpenMP}} \\
+& Some experience writing multi-process C programs \\
+& \quad \small{\textbf{POSIX}, \textbf{MPI}} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Data Analysis} & Nonlinear model fitting and parameter computation in \\
+& \textbf{Python} with \textbf{scipy} and \textbf{numpy} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Embedded Systems} & Microcontroller Architectures \\
+& \quad \small{\textbf{ARM}, \textbf{PIC}} \\
+& Interfaces (experience varying between APIs or bitbashing) \\
+& \quad \small{\textbf{UART/USART}, \textbf{SPI}, \textbf{I\textsuperscript{2}C}, \textbf{CANBUS}} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Computer Literacy} & Operating Systems: \textbf{Windows} and \textbf{Linux}, with \textbf{cmd} and \textbf{bash} \\
+& Presentation: \textbf{\LaTeX}, \textbf{Word}, \textbf{Powerpoint}, and \textbf{Excel} with \textbf{VBA} \\
+& Version Control: \textbf{Git} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Miscellaneous} & Red Cross first aid certificate \\
+& Scouts NZ Cooksey leadership course\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	POSITIONS OF RESPONSIBILITY
+%----------------------------------------------------------------------------------------
+
+\section{Memberships and Positions Held}
+
+\begin{tabular}{rl}
+
+2016-\emph{Present} & Member, \emph{IEEE} \\
+2014-\emph{Present} & Member, \emph{Engineering New Zealand} \\
+&\\
+2018-\emph{Present} & President, \emph{University of Canterbury Medi\ae val \& Renaissance Society} \\
+2019-\emph{Present} & Vice President, \emph{University of Canterbury Computer Society} \\
+2017-2018 & Academic Coordinator, \emph{University of Canterbury Computer Society} \\
+2017 & Promotions Manager, \emph{University of Canterbury IET Branch} \\
+2012-2013 & Chairman, \emph{Scouts NZ Lower North Island Venturer Council} \\
+ 
+
+
+
+
+\end{tabular}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Recreational Activities and Interests}
+
+\begin{tabular}{rl}
+
+2015-\emph{Present} & Historical European martial arts \\
+& \quad \small\emph{German longsword  \& messer, Scottish \& English broadsword} \\
+
+2015-\emph{Present} & Wudan kung fu \\
+
+2010-\emph{Present} & Canoe polo \\
+& \quad \small\emph{2013 Wellington U18 representative squad member} \\
+
+2003-2014 & Ryukyu kempo karate \\
+& \quad \small\textbf{3\textsuperscript{rd} degree black belt} \\
+
+\emph{Intermittent} & Poetry \\
+& \quad \small\textbf{2012 NZ Secondary Schools finalist} \\
+& Surf kayaking \\
+& Metalwork \\
+& \quad \small\emph{Armoury, jewellery, knifemaking}
+
+
+
+
+
+	
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+
+
+\end{document}
